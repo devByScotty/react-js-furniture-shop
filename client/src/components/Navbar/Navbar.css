@@ -1,0 +1,116 @@
+/* Navbar.css */
+.navHeader {
+  background-color: #5C8659 !important;
+  color: white;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.navLogo {
+  flex: 1;
+}
+
+.navListsItems {
+  flex: 2;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.navUserItems {
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btnUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btnUser i {
+  font-size: 15px;
+  color: gold;
+}
+
+.menuToggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .navMenu {
+    gap: 15px;
+  }
+
+  .navUserItems {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navListsItems {
+    display: none;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .navUserItems {
+    display: none;
+  }
+
+  .navBar.expanded .navListsItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #5C8659;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    border-top: 1px solid white;
+    padding: 10px 0;
+  }
+
+  .navBar.expanded .navUserItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #5C8659;
+    border-top: 1px solid white;
+    padding: 10px 0;
+  }
+
+  .navBar.expanded .navMenu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+}
+

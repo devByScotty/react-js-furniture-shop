@@ -1,0 +1,131 @@
+/* ProductFurniture.css */
+
+/* Main container */
+.main {
+    position:relative;
+    width:100% !important; 
+    height:90vh !important; 
+    padding:20px 20px;
+    cursor:pointer;
+    
+  }
+  
+  /* Grid container */
+  .f-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:100%;
+    width:100%;
+    gap: 20px;
+  }
+  
+  /* Left grid */
+  .fleft-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    width:100%;
+    height:100%;
+    
+    
+  }
+  
+  /* Left top section */
+  .fleft-top {
+    position:relative;
+    align-items:center;
+  }
+  
+  /* Image in the left top section */
+  .fleft-top img {
+
+    width:35rem;
+    height:32rem;
+    clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 0% 100%, 0% 35%);
+    border-radius: 10px;
+  }
+  
+  /* Left bottom section */
+  .fleft-bottom {
+    background-color: #ffffff; /* Example background color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Heading in left bottom section */
+  .fleft-bottom h2 {
+    margin: 0;
+    font-family: "Pathway Extreme", sans-serif;
+  }
+  
+  /* Button in left bottom section */
+  .fleft-bottom button {
+    margin-top: 10px;
+    font-size:20px;
+    font-weight:500;
+    color: #5C8659; /* Example text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Right grid */
+  .fright-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Heading in right grid */
+  .fright-grid h1 {
+   
+    font-size:65px;
+    color:black;
+    font-family: 'Dancing Script';
+    font-weight:600;
+  }
+  
+  /* Star icon in heading */
+  .fright-grid h1 i {
+    color: gold; /* Example star color */
+    font-size:30px;
+  }
+  
+  /* Paragraph in right grid */
+  .fright-grid p {
+    margin-top: 10px;
+    line-height: 1.5;
+    color:#A1AF9F;
+    font-family: "Pathway Extreme", sans-serif;
+    font-weight: 400;
+
+  }
+  
+  /* Right furniture section */
+  .right-furniture {
+    position: relative;
+  }
+  
+  /* Background behind the image */
+  .fbackground-color {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 35%;
+    height: 50%;
+    background-color: #EAE9D6; 
+    border-radius: 10px;/* Adjust opacity as needed */
+    z-index:-2;
+   
+  }
+  
+  /* Image in the right furniture section */
+  .right-furniture img {
+    width: 50%;
+    height: auto;
+    z-index:999;
+    
+  }
+  

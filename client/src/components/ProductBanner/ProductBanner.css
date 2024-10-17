@@ -1,0 +1,209 @@
+/* General Styles */
+.product-banner {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 100% !important;
+  height: auto; /* Change to auto for responsive height */
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.product-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid gold;
+}
+
+.p-heading h1 {
+  margin-left: 0; /* Adjust for center alignment */
+  text-align: center; /* Center align the heading */
+  line-height: 1; /* Adjust line spacing */
+  font-size: 2rem; /* Adjust for smaller screens */
+  color: #5C8659;
+  font-family: Menlo;
+  opacity: 0.9;
+}
+
+.type-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align items */
+  padding: 10px 10px;
+  gap: 10px; /* Adjust gap for smaller screens */
+  align-items: center;
+  text-align: center;
+}
+
+.type-list li {
+  border: 1px solid #ccc;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  height: auto;
+  width: auto;
+  padding: 4px 10px; /* Adjust padding */
+  font-size: 1rem; /* Adjust font size */
+  color: black;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items for smaller screens */
+  justify-content: center; /* Center align items */
+  padding-bottom: 2rem;
+}
+
+.product-card {
+  min-width: 200px; /* Adjust min-width for smaller screens */
+  margin: 10px; /* Adjust margin */
+  overflow: hidden;
+}
+
+.productBackground {
+  position: relative;
+  width: 100% !important;
+  height: auto;
+}
+
+.product-image {
+  width: 100%; /* Make image responsive */
+  height: 200px; /* Adjust height */
+  object-fit: cover;
+  z-index: 99;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover {
+  transform: translateY(-5px);
+}
+
+.product-details {
+  padding: 1rem; /* Adjust padding */
+}
+
+.product-details-section {
+  display: flex;
+  flex-direction: column; /* Stack items for smaller screens */
+  gap: 10px; /* Adjust gap */
+  padding: 5px 5px;
+  border-top: 1px solid gold;
+  border-bottom: 1px solid gold;
+}
+
+.product-name {
+  font-size: 1.2rem; /* Adjust font size */
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.product-type {
+  font-size: 1rem; /* Adjust font size */
+  color: #666;
+  font-weight: bold;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.product-type:hover {
+  color: #5C8659;
+}
+
+.product-price {
+  font-size: 1rem; /* Adjust font size */
+  font-weight: bold;
+  color: #666;
+  font-weight: 600;
+}
+
+.product-cards::-webkit-scrollbar {
+  width: 5px; /* width of the scrollbar */
+}
+
+.product-cards::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the tracking area */
+  width: 5px; 
+}
+
+.product-cards::-webkit-scrollbar-thumb {
+  background: #ccc; /* color of the scroll thumb */
+  width: 5px; 
+}
+
+.product-cards::-webkit-scrollbar-thumb:hover {
+  background: #aaa; /* color of the scroll thumb on hover */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .p-heading h1 {
+      font-size: 3rem; /* Adjust for medium screens */
+  }
+
+  .product-details-section {
+      flex-direction: row; /* Row layout for medium screens */
+  }
+
+  .product-image {
+      height: 300px; /* Adjust height for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-heading h1 {
+      font-size: 4rem; /* Adjust for large screens */
+  }
+
+  .product-card {
+      min-width: 250px; /* Adjust min-width for large screens */
+  }
+
+  .product-image {
+      height: 350px; /* Adjust height for large screens */
+  }
+}
+
+/* Additional Media Queries for Smaller Screens */
+@media (max-width: 600px) {
+  .p-heading h1 {
+      font-size: 1.5rem; /* Adjust font size for small screens */
+  }
+
+  .type-list {
+      gap: 5px; /* Reduce gap for smaller screens */
+  }
+
+  .type-list li {
+      padding: 4px 6px; /* Adjust padding */
+      font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .product-card {
+      min-width: 150px; /* Adjust min-width for small screens */
+      margin: 5px; /* Adjust margin */
+  }
+
+  .product-image {
+      height: 150px; /* Adjust height for small screens */
+  }
+
+  .product-name {
+      font-size: 1rem; /* Adjust font size */
+  }
+
+  .product-type,
+  .product-price {
+      font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .product-details {
+      padding: 0.5rem; /* Adjust padding */
+  }
+
+  .product-details-section {
+      gap: 5px; /* Adjust gap */
+  }
+}

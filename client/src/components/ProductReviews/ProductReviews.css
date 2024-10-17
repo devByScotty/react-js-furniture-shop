@@ -1,0 +1,96 @@
+.mainBanners {
+    position:relative;
+    width:100% !important; 
+    height:100vh !important; 
+    padding:20px 20px;
+    cursor:pointer;
+    margin-top:10px;
+   
+  }
+
+  .reviewHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding:10px 10px;
+    margin-bottom:20px;
+    border-bottom:1px solid gold;
+    border-top:1px solid gold;
+}
+
+.headerText h1 {
+    margin-left: 100px; /* Adjust as needed */
+    line-height: 1; /* Adjust line spacing */
+    font-size:60px;
+    color:#5C8659;
+    font-family: 'Dancing Script';
+    opacity:0.9;
+}
+
+.reviewArrows {
+
+    display:flex;
+    gap:5px;
+ 
+}
+
+.arrow i {
+    color:#5C8659;
+    border:1px solid white;
+    border-radius:60px;
+    padding:10px;
+    font-size:30px;
+    height:auto;
+    width:100px;
+    text-align:center;
+ /* add a transition for a smooth hover effect */
+}
+
+.reviewsContainer {
+    display: flex;
+    overflow:hidden;;
+    padding:10px 10px;
+  }
+  
+  .singleReview {
+    min-height:450px;
+    min-width: 350px;
+    margin-right: 2rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+    padding:10px 10px;
+    gap:10px;
+    background:#ffffff;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+  }
+  
+  .starRating {
+    display:flex;
+    padding:10px 10px;
+    gap:5px;
+    color: gold; /* Example star color */
+    font-size:30px;
+    
+
+  }
+
+ 
+  .userDetails {
+    display:flex;
+    justify-content:space-between;
+    padding:10px 10px;
+    gap:10px;
+  }
+
+
+  .avatar {
+    max-height:35px;
+    max-width:50px;
+    object-fit:cover;
+    border-radius:100px;
+   
+  }
+
+ 
