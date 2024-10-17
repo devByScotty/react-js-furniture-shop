@@ -13,7 +13,7 @@ const UserProfilePage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5001/api/user/${userId}/purchases`);
+        const response = await axios.get(`https://react-js-furniture-shop-5.onrender.com/user/${userId}/purchases`);
         setUserData(response.data);
       } catch (err) {
         setError(err.response?.data?.message || 'Error fetching data');
