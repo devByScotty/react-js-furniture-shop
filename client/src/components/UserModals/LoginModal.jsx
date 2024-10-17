@@ -24,7 +24,7 @@ const LoginModal = ({ open, onClose }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5001/api/login', {
+      const response = await fetch('https://react-js-furniture-shop-5.onrender.com/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }, // Ensure content-type is JSON
         body: JSON.stringify(credentials), // Send email and password as JSON
