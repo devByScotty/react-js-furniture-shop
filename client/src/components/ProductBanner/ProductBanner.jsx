@@ -11,7 +11,7 @@ const ProductBanner = ({ addToCart, toggleCart,prods }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/products');
+        const response = await axios.get('https://react-js-furniture-shop-5.onrender.com/api/products');
         console.log(response.data);
         setProducts(response.data);
       } catch (error) {
