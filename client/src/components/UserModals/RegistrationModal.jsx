@@ -34,7 +34,7 @@ const RegistrationModal = ({ open, onClose }) => {
     e.preventDefault();
     setError(''); // Clear previous errors
     try {
-      const response = await fetch('http://localhost:5001/api/register', {
+      const response = await fetch('https://react-js-furniture-shop-5.onrender.com/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData), // Send form data
