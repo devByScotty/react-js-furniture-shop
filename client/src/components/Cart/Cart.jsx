@@ -54,7 +54,7 @@ const Cart = ({ cartItems, removeFromCart, toggleCart, cartOpen, total, clearCar
         console.log('Purchase Data Sent:', { purchases: purchaseData, totalAmount: total });
     
         try {
-            const response = await fetch('http://localhost:5001/api/purchase', {
+            const response = await fetch('https://react-js-furniture-shop-5.onrender.com/api/purchase', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
