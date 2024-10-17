@@ -15,7 +15,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/products'); // Adjust the API endpoint as needed
+        const response = await axios.get('https://react-js-furniture-shop-5.onrender.com/api/products'); // Adjust the API endpoint as needed
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching products:', error);
